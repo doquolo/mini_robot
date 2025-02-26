@@ -53,3 +53,7 @@ void updateGamepad()
 bool isPressed(int button) { 
     return gamepad_state[button-1];
 }
+
+void sendText(String text) {
+    bleSerial.println(text.c_str());
+}

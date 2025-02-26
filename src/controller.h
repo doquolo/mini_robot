@@ -26,5 +26,8 @@ void updateGamepad();
 // using for checking gamepad input
 bool isPressed(int button);
 
+// using for sending text to the builtin display
+void sendText(String text);
+
 #endif
 
