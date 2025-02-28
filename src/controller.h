@@ -15,7 +15,7 @@
 #define RIGHT_BUTTON 8
 
 // ble device name
-#define BLE_NAME "uwu"
+#define BLE_NAME "car3"
 
 // using for init ble instance
 void initGamepad();
