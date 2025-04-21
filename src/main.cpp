@@ -9,11 +9,11 @@ void setup()
 {
   // Mở serial kết nối với máy tính (Dùng để gỡ lỗi)
   Serial.begin();
-  // Thiết lập cầu H
+  // Bật module điều khiển động cơ
   initMotor();
-  // Thiết lập gamepad
+  // Bật tính năng điều khiển từ xa
   initGamepad();
-  // Thiết lập cảm biến khoảng cách
+  // Bật cảm biến khoảng cách
   initDistance();
 
   // Bật còi
@@ -29,12 +29,14 @@ void setup()
 int prev_mode = 0;
 int mode = 0;
 
+
+// Hàm làm việc chính
 void loop()
 {
   // cập nhật lệnh điều khiển mới từ app
   updateGamepad();
 
-  // chuyển mode (nếu có)
+  // chuyển mode
   if (isPressed(BUTTON1))
     mode = 0;
   else if (isPressed(BUTTON2))
