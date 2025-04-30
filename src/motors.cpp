@@ -23,6 +23,8 @@ void initMotor() {
     pinMode(M2_PWM, OUTPUT);
     pinMode(M2_CW, OUTPUT);
     pinMode(M2_CCW, OUTPUT);
+
+    pinMode(25, HIGH);
 }
 
 void run(int direction) {

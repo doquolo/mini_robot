@@ -8,7 +8,7 @@
 void setup()
 {
   // Mở serial kết nối với máy tính (gỡ lỗi)
-  Serial.begin();
+  Serial.begin(115200);
   // Thiết lập cầu H
   initMotor();
   // Thiết lập gamepad
