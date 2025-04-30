@@ -4,13 +4,13 @@
 #include <Arduino.h>
 
 // define H-bridge module
-#define M1_PWM 5
-#define M1_CW 7
-#define M1_CCW 6
+// #define M1_PWM 27
+#define M1_CW 16
+#define M1_CCW 17
 
-#define M2_PWM 10
-#define M2_CW 8
-#define M2_CCW 9
+// #define M2_PWM 33
+#define M2_CW 18
+#define M2_CCW 19
 
 // define direction alias
 #define FORWARD 0
